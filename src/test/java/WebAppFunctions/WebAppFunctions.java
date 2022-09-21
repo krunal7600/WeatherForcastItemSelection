@@ -1,6 +1,7 @@
 package WebAppFunctions;
 
 import PageObjects.TemperatureCheckObjects;
+import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -101,7 +102,7 @@ public class WebAppFunctions {
           }
 
 
-    public String minValue(List<WebElement> pricelist)
+    public String minValue(@NotNull List<WebElement> pricelist)
     {
         price = new ArrayList<>();
         for (WebElement coll : pricelist)
